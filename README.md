@@ -2,7 +2,8 @@
 This show steps how to run your own kernel module at bootup.
 
 Just to share what I've learn:
-  Assum you have a hello.ko kernel module and want the kernel to load it at boot up.
+  
+  Assume you have a hello.ko kernel module and want the kernel to load it at boot up.
   
   Here is the hello.c, you expect to see "Loading hello module..." in the dmesg after kernel bootup.
   
