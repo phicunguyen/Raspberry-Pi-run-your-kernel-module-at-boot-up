@@ -41,6 +41,7 @@ You need to add your hello.ko in /etc/modules for kernel to load it.
     i2c-dev
  
  As show above the /etc/modules does not have the hello (your kernel module, don't need to provide .ko).
+ 
  Follow the steps below to add your hello to the /etc/modules
  
     sudo cp hello.ko /lib/modules/$(uname -r)			
@@ -50,6 +51,7 @@ You need to add your hello.ko in /etc/modules for kernel to load it.
  
  
  The "sudo cp hello.ko /lib/modules/$(uname -r)" will copy the hello.ko to your /lib/modules/{your kernel}
+ 
  In my case, my kernel is 4.19.93-v7l+; therefore, the hello.ko will copy to my /lib/modules/4.19.93-v7l+
     
     The uname -r return your raspberrpi kernel that being used.
@@ -80,6 +82,7 @@ You need to add your hello.ko in /etc/modules for kernel to load it.
     pi@raspberrypi:~ $ 
    
   Now reboot your kernel by run "sudo reboot".
+  
   Log on your raspberry pi and run dmesg, as you can see below that the hello.ko is loaded right after the i2c
   
     [    1.901589] i2c /dev entries driver
