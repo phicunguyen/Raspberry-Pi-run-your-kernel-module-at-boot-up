@@ -54,7 +54,7 @@ You need to add your hello.ko in /etc/modules for kernel to load it.
  
  In my case, my kernel is 4.19.93-v7l+; therefore, the hello.ko will copy to my /lib/modules/4.19.93-v7l+
     
-    The uname -r return your raspberrpi kernel that being used.
+    The 'uname -r' return your raspberrpi kernel that being used. my is 4.19.93-v7l+
     pi@raspberrypi:~ $ uname -r
        4.19.93-v7l+
 
